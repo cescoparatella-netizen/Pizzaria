@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio | PIZZA</title>
+  <link rel="stylesheet" href="cardapio.css">
+  <script src="cardapio.js" defer></script>
+</head>
+<body>
+<header class="cabecalho-site">
+  <a class="marca" href="inicio.html">
+    <span class="simbolo-marca">🍕</span>
+    <span>
+      <h1>PIZZA</h1>
+      <h3>sabor em cada fatia</h3>
+    </span>
+  </a>
+  <nav class="navegacao-principal">
+
+    <a href="inicio.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="pedidos.html">Pedidos</a>
+    <a href="perfil.html">Minha conta</a>
+    <a href="carrinho.html">Carrinho</a>
+  
+  </nav>
+
+  <div class="acoes-cabecalho">
+
+    <button class="botao-icone alternar-pesquisa" aria-label="Buscar" title="Buscar">⌕</button>
+    <button class="botao-icone alternar-tema" aria-label="Mudar tema" title="Mudar tema">☼</button>
+    <a class="botao-icone atalho-carrinho" href="carrinho.html" title="Carrinho">🛒<span class="quantidade-carrinho">0
+
+    </span>
+  </a>
+  
+  </div>
+  
+  <div class="campo-pesquisa oculto">
+    <input id="pesquisaSite" type="search" placeholder="Buscar pizza...">
+    <button class="botao primario enviar-pesquisa">Buscar
+
+    </button>
+  </div>
+</header>
+
+<main class="conteiner">
+
+<secao class="titulo-pagina">
+  <p class="subtitulo-banner">ESCOLHA SEU SABOR</p>
+  <h1>Nosso cardápio</h1>
+  <p>Encontre sua próxima pizza favorita.</p>
+</secao>
+
+<div class="linha-filtros">
+  <input id="pesquisaMenu" type="search" placeholder="Pesquisar no cardápio...">
+  <select id="filtroCategoria">
+    <option value="todas">Todas as pizzas</option>
+    <option value="tradicional">Tradicionais</option>
+    <option value="especial">Especiais</option>
+  
+  </select>
+</div>
+<div class="grade-produtos" id="produtosMenu"></div>
+
+</main>
+
+<footer class="rodape-site">PIZZA — sabor em cada fatia. <span>2026</span>
+</footer>
+
+</body>
+</html>

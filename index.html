@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA | Login</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body class="pagina-login">
+
+  <main class="cartao-login">
+
+    <a class="marca marca-login" href="index.html"><span class="simbolo-marca">🍕</span>
+      <span><h1>PIZZA</h1>
+        <h3>sabor em cada fatia</h3>
+      </span>
+    </a>
+
+    <div class="abas-autenticacao">
+      
+      <button class="aba-autenticacao ativo" data-auth="login">Login</button>
+      <button class="aba-autenticacao" data-auth="register">Register</button>
+   
+    </div>
+
+    <form id="formularioLogin" class="formulario-autenticacao">
+    
+      <label for="emailLogin">E-mail</label>
+      <input id="emailLogin" type="email" placeholder="Enter your email" required>
+      <label for="senhaLogin">Password</label>
+      <input id="senhaLogin" type="password" placeholder="Enter your password" required>
+      <button class="botao primario largura-total" type="submit">Entrar</button>
+      <p class="mensagem-formulario" id="mensagemLogin"></p>
+
+    </form>
+    
+    <form id="formularioCadastro" class="formulario-autenticacao oculto">
+
+      <label for="nomeCadastro">Nome completo</label>
+      <input id="nomeCadastro" type="text" placeholder="Seu nome" required>
+      <label for="emailCadastro">E-mail</label>
+      <input id="emailCadastro" type="email" placeholder="Digite seu e-mail" required>
+      <label for="telefoneCadastro">Telefone</label>
+      <input id="telefoneCadastro" type="tel" placeholder="(31) 99999-9999" maxlength="15">
+      <label for="senhaCadastro">Senha</label>
+      <input id="senhaCadastro" type="password" placeholder="Crie uma senha" required minlength="4">
+      <button class="botao primario largura-total" type="submit">Criar conta</button>
+      <p class="mensagem-formulario" id="mensagemCadastro"></p>
+
+    </form>
+
+    <button class="alternar-tema tema-login" type="button">☀ / ☾ Mudar tema</button>
+    
+  </main>
+
+</body>
+</html>
